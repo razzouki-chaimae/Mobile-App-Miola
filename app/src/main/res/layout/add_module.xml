@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un module"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:paddingStart="5dp"
+        android:textSize="20sp"
+        android:textColor="#4CB7D9"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/module"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/background_edit_text"
+        android:inputType="textPersonName"
+        android:textColor="#404040"
+        android:hint="Entrer l'intitule du module..."
+        android:textColorHint="#404040"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/profmodule"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/background_edit_text"
+        android:textColor="#404040"
+        android:hint="Entrer l'enseignant du module..."
+        android:textColorHint="#404040"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/moduledescription"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/background_edit_text"
+        android:textColor="#404040"
+        android:hint="Entrer la description du module..."
+        android:textColorHint="#404040"
+        android:textSize="17dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ajoutermodule"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/orange_background">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AJOUTER"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

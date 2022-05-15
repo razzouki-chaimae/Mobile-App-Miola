@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WritingMessageActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/discadMessage"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="X"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif"/>
+
+        <Button
+            android:id="@+id/publier"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Publier"
+            android:textStyle="bold"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="165dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/writtenMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Ecrivez votre message..."
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>
